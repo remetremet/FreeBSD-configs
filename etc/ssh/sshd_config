@@ -112,6 +112,15 @@ UseDNS no
 # override default of no subsystems
 Subsystem       sftp    /usr/libexec/sftp-server
 
+#Match User AAAAA
+# ChrootDirectory /home/AAAAA
+# X11Forwarding yes
+# AllowAgentForwarding yes
+# AllowTcpForwarding yes
+# PubkeyAuthentication yes
+# AuthorizedKeysFile     /home/AAAAA/.ssh/authorized_keys
+# RhostsRSAAuthentication yes
+
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
 #       X11Forwarding no
