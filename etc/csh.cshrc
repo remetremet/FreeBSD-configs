@@ -3,6 +3,8 @@
 # System-wide .cshrc file for csh(1).
 setenv CLICOLOR yes
 setenv GREP_OPTIONS --color=auto
+setenv  EDITOR  joe
+setenv  PAGER   more
 
 set autolist
 
