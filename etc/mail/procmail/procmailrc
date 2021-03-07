@@ -1,0 +1,21 @@
+#Uncomment the following lines and use tail -f procmail.log to debug
+LOGFILE=/var/log/procmail.log
+VERBOSE=yes
+LOGABSTRACT=all
+
+
+# Mail that is very likely spam (>12) can be saved on the server
+# (not forwarded), or by moving the # down one line, even dropped
+# on the floor.  Note that dropping mail on the floor is a *bad*
+# idea unless you really, really believe no false positives will
+# have a score greater than 12.  If you want all mail forwarded,
+# just add #'s in front of each of these lines:
+
+:0
+* ^X-Spam-Level: \*\*\*\*\*\*\*\*\*\*\*\*\*\*
+/dev/null
+#almost-certainly-spam
+
+
+# All other pass
+#:0
