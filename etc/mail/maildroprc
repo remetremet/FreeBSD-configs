@@ -1,0 +1,7 @@
+HOME="/var/mail"
+DEFAULT="/var/mail"
+logfile "/var/log/procmail.log"
+VERBOSE="4"
+
+if (/^X-Spam-Level: \*{12,}/)
+  to /dev/null
