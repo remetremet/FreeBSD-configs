@@ -15,3 +15,8 @@ Configuration contains:
 - IPv6 RA
 - WiFi client
 - LACP failover network
+
+
+![repo-size-image](https://img.shields.io/github/repo-size/remetremet/FreeBSD-configs)
+
+Use it if you like it
