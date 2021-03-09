@@ -5,13 +5,13 @@ Some of them needs manual adjustment to specific server/router/network.
 
 Configuration contains:
 ---
-- basic settings
+- basic settings (serial console, network, ...)
 - DNS server
 - DHCP server
 - Let's Encrypt TLS certificate automation
 - Rsync
 - Zabbix agent (ie. node/client)
-- Mail, Spamassassin, Procmail
+- Sendmail, Spamassassin, Procmail
 - IPv6 RA
 - WiFi client
 - LACP failover network
