@@ -1,7 +1,7 @@
-Packages
+Packages I use and I recomend to use on every FreeBSD server
 ===
 
-Basic packeges on all servers
+Essential packeges on all servers
 ---
 - bash
 - bash-completion
@@ -74,7 +74,7 @@ pkg install apache24 mod_php74 nginx php74 portupgrade
 ```
 
 
-Optional packages (mail)
+Optional packages (Mail)
 ---
 - cclient
 - clamav
@@ -94,7 +94,7 @@ procmail sendmail spamass-milter spamassassin
 ```
 
 
-Optional packages (router)
+Optional packages (Router)
 ---
 - bind916
 - isc-dhcp44-server
@@ -121,24 +121,26 @@ pkg install bind916 easy-rsa isc-dhcp44-server openvpn portupgrade unbound
 
 Optional packages (DNS, Zabbix, Samba, ...)
 ---
-- bind916
-- ffmpeg
-- mediatomb
-- mosquitto
-- net-snmp
-- nut
+- `bind916` - Authoritative DNS
+- `ffmpeg` - DLNA
+- `libcoap` - Ikea Tradfri communication
+- `mediatomb` - DLNA
+- `mosquitto` - IOT
+- `net-snmp` - Network monitoring
+- `nut` - UPS monitoring
 - openipmi
 - portupgrade
-- py37-certbot
-- py37-certbot-dns-rfc2136
+- `py37-certbot` - Let's Encrypt
+- `py37-certbot-dns-rfc2136` - Let's Encrypt
 - py37-pip
-- py37-speedtest-cli
-- samba411
-- ser2net
-- zabbix52-frontend
-- zabbix52-proxy
-- zabbix52-server
+- `py37-speedtest-cli` - Ookla's speedtest client
+- `samba411` - SMB file sharing
+- `ser2net` - RS232 communication over IP
+- `zabbix52-frontend` - Zabbix
+- `zabbix52-proxy` - Zabbix
+- `zabbix52-server` - Zabbix
 ```
-pkg install bind916 ffmpeg mediatomb mosquitto net-snmp nut openipmi portupgrade py37-certbot py37-certbot-dns-rfc2136\
-py37-pip py37-speedtest-cli samba411 ser2net zabbix52-frontend zabbix52-proxy zabbix52-server
+pkg install bind916 ffmpeg libcoap mediatomb mosquitto net-snmp nut openipmi portupgrade py37-certbot\
+py37-certbot-dns-rfc2136 py37-pip py37-speedtest-cli samba411 ser2net zabbix52-frontend zabbix52-proxy\
+zabbix52-server
 ```
