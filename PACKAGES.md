@@ -12,6 +12,7 @@ Essential packeges on all servers
 - ddrescue
 - dhcpdump
 - dmidecode
+- fdupes
 - flashrom
 - fping
 - gawk
@@ -43,7 +44,7 @@ Essential packeges on all servers
 - zabbix52-agent
 ```
 pkg install bash bash-completion bind-tools bsdstats ca_root_nss curl ddrescue dhcpdump dmidecode \
-flashrom fping gawk git iftop iperf3 iso-codes joe links lsof lynx mc nmap openssl pciids pciutils perl5 \
+fdupes flashrom fping gawk git iftop iperf3 iso-codes joe links lsof lynx mc nmap openssl pciids pciutils perl5 \
 python37 rsync screen smartmontools sudo tcpdump tcping tcptraceroute tuptime usbutils wget zabbix52-agent
 ```
 
