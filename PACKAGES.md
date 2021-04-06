@@ -51,8 +51,8 @@ python37 rsync screen smartmontools sudo tcpdump tcping tcptraceroute tuptime us
 
 Optional packages for DB server (MariaDB, MySQL, SQLite)
 ---
-- `mariadb104-client`
-- `mariadb104-server`
+- `mariadb104-client` **pkg lock recommended**
+- `mariadb104-server` **pkg lock recommended**
 - `mysql57-client`
 - `mysql57-server`
 - `mysqltuner`
@@ -86,7 +86,7 @@ Optional packages for Mail server (TLS, Auth, AV, DKIM, AntiSpam, Greylist, IMAP
 - `opendkim`
 - `portupgrade`
 - `procmail`
-- `sendmail`
+- `sendmail` **ports compiled version possibly needed for all the features**
 - `spamass-milter`
 - `spamassassin`
 ```
@@ -95,7 +95,7 @@ procmail sendmail spamass-milter spamassassin
 ```
 
 
-Optional packages for Router (DHCP)
+Optional packages for Router (DHCP, DHCPv6)
 ---
 - `isc-dhcp44-server`
 - `net-snmp`
@@ -137,7 +137,7 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `ser2net` - RS232 communication over IP
 - `zabbix52-frontend` - Zabbix
 - `zabbix52-proxy` - Zabbix
-- `zabbix52-server` - Zabbix
+- `zabbix52-server` - Zabbix **ports compiled version needed for MariaDB**
 ```
 pkg install bind916 ffmpeg libcoap mediatomb mosquitto net-snmp nut openipmi portupgrade py37-certbot\
 py37-certbot-dns-rfc2136 py37-pip py37-speedtest-cli samba411 ser2net zabbix52-frontend zabbix52-proxy\
