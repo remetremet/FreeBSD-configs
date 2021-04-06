@@ -122,6 +122,9 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 ---
 - `bind916` - Authoritative DNS
 - `ffmpeg` - DLNA
+- `fusefs-exfat` - exFAT support
+- `fusefs-ntfs` - MS Windows NTFS support
+- `fusefs-ext2` - Linux ext2/3/4 support
 - `libcoap` - Ikea Tradfri communication
 - `mediatomb` - DLNA
 - `mosquitto` - IOT
@@ -139,7 +142,7 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `zabbix52-proxy` - Zabbix
 - `zabbix52-server` - Zabbix (**ports compiled version needed for MariaDB**)
 ```
-pkg install bind916 ffmpeg libcoap mediatomb mosquitto net-snmp nut openipmi portupgrade py37-certbot\
-py37-certbot-dns-rfc2136 py37-pip py37-speedtest-cli samba411 ser2net zabbix52-frontend zabbix52-proxy\
-zabbix52-server
+pkg install bind916 ffmpeg fusefs-exfat fusefs-ntfs fusefs-ext2 libcoap mediatomb mosquitto net-snmp nut\
+openipmi portupgrade py37-certbot py37-certbot-dns-rfc2136 py37-pip py37-speedtest-cli samba411 ser2net\
+zabbix52-frontend zabbix52-proxy zabbix52-server
 ```
