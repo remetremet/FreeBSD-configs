@@ -121,6 +121,7 @@ pkg install easy-rsa isc-dhcp44-server openvpn portupgrade unbound
 Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 ---
 - `bind916` - Authoritative DNS
+- `bonnie++` - File system benchmark
 - `ffmpeg` - DLNA
 - `fusefs-exfat` - exFAT support
 - `fusefs-ntfs` - MS Windows NTFS support
@@ -138,6 +139,7 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `py37-speedtest-cli` - Ookla's speedtest client
 - `samba411` - SMB file sharing
 - `ser2net` - RS232 communication over IP
+- `sysbench` - CPU/file system/SQL benchmark (**ports compiled version needed for MariaDB**)
 - `zabbix52-frontend` - Zabbix
 - `zabbix52-proxy` - Zabbix
 - `zabbix52-server` - Zabbix (**ports compiled version needed for MariaDB**)
