@@ -141,6 +141,7 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `samba411` - SMB file sharing
 - `ser2net` - RS232 communication over IP
 - `sysbench` - CPU/file system/SQL benchmark (**ports compiled version needed for MariaDB**)
+- `wordpress`
 - `zabbix52-frontend` - Zabbix
 - `zabbix52-proxy` - Zabbix
 - `zabbix52-server` - Zabbix (**ports compiled version needed for MariaDB**)
