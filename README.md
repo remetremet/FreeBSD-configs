@@ -7,6 +7,7 @@ Some of them needs manual adjustment to specific server/router/network.
 Configuration contains:
 ---
 - basic settings (serial console, network, ...)
+- log rotation
 - DNS server
 - DHCP server
 - Let's Encrypt TLS certificate automation
