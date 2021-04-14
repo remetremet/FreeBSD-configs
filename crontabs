@@ -1,5 +1,9 @@
 #
 
+# SQL daily exports
+15      2       *       *       *       /data/scripts/SQL_dailyexport.sh
+15      5       *       *       *       /data/scripts/SQL2_dailyexport.sh
+15      8       *       *       *       /data/scripts/SQL_exportrotate.sh
 # Let's Encrypt certs distribution
 11      7       1,8,15,22,29       *       *       /home/certs/sync_certs.sh
 # Zabbix Cron data processing
