@@ -1,4 +1,12 @@
 #
+
+# Let's Encrypt certs distribution
+11      7       1,8,15,22,29       *       *       /home/certs/sync_certs.sh
+# Zabbix Cron data processing
 *       *       *       *       *       /var/zabbix/_cron.sh
+# Config backup tool
 29      5       *       *       *       /usr/home/transfer/TRANSFER_PREPARE.sh
+# Time sync
 51      *       *       *       *       /usr/sbin/ntpdate in.pool.ntp.org  > /dev/null 2> /dev/null
+# Uptime stats
+*/5     *       *       *       *       /usr/local/bin/tuptime -x > /dev/null
