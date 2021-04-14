@@ -1,0 +1,17 @@
+$TTL 1d
+@                       IN      SOA     dns1.domain.com. root.domain.com. (
+                                2021010101    ; serial number
+                                1800          ; refresh
+                                600           ; retry
+                                3600000       ; expire
+                                600)          ; time-to-live
+
+@                               NS      dns1.domain.com.
+@                               NS      dns2.domain.com.
+@                               NS      dns3.domain.com.
+
+; Comment
+1                               IN      PTR     server1.domain.com.
+2                               IN      PTR     server2.domain.com.
+
+254                             IN      PTR     router-server.domain.com.
