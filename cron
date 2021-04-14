@@ -1,0 +1,4 @@
+#
+*       *       *       *       *       /var/zabbix/_cron.sh
+29      5       *       *       *       /usr/home/transfer/TRANSFER_PREPARE.sh
+51      *       *       *       *       /usr/sbin/ntpdate in.pool.ntp.org  > /dev/null 2> /dev/null
