@@ -8,6 +8,8 @@
 11      5       1,8,15,22,29    *       *       /home/certs/cert_renew.sh
 # Let's Encrypt certs distribution
 11      7       7,14,21,28      *       *       /home/certs/sync_certs.sh
+# RMT IPFW
+59      *       *       *       *       /var/db/RMT_ipfw/_update.sh
 # Zabbix Cron data processing
 *       *       *       *       *       /var/zabbix/_cron.sh
 # Config backup tool
