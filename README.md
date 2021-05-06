@@ -25,8 +25,10 @@ Future
  - keep all the config file valid and working
 
 
-Use it if you like it
+---
 
 ![license-image](https://img.shields.io/github/license/remetremet/FreeBSD-configs?style=plastic)
 ![last-commit-image](https://img.shields.io/github/last-commit/remetremet/FreeBSD-configs?style=plastic)
 ![repo-size-image](https://img.shields.io/github/repo-size/remetremet/FreeBSD-configs?style=plastic)
+
+Use it if you like it
