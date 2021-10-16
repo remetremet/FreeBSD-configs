@@ -86,7 +86,7 @@ Optional packages for Mail server (TLS, Auth, AV, DKIM, AntiSpam, Greylist, IMAP
 - `opendkim`
 - `portupgrade`
 - `procmail`
-- `sendmail` (**ports compiled version possibly needed for all the features**)
+- `sendmail` (**ports by hand compiled version possibly needed for all the features (TLS, DKIM, Auth, ...)**)
 - `spamass-milter`
 - `spamassassin`
 ```
@@ -140,11 +140,11 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `py37-speedtest-cli` - Ookla's speedtest unofficial client
 - `samba413` - SMB file sharing
 - `ser2net` - RS232 communication over IP
-- `sysbench` - CPU/file system/SQL benchmark (**ports compiled version needed for MariaDB**)
+- `sysbench` - CPU/file system/SQL benchmark (**ports by hand compiled version needed for use with MariaDB**)
 - `wordpress`
 - `zabbix52-frontend` - Zabbix
 - `zabbix52-proxy` - Zabbix
-- `zabbix52-server` - Zabbix (**ports compiled version needed for MariaDB**)
+- `zabbix52-server` - Zabbix (**ports by hand compiled version needed for use with MariaDB**)
 ```
 pkg install bind916 ffmpeg fusefs-exfat fusefs-ntfs fusefs-ext2 libcoap mediatomb mosquitto net-snmp nut\
 openipmi portupgrade py37-certbot py37-certbot-dns-rfc2136 py37-pip py37-speedtest-cli samba413 ser2net\
