@@ -19,6 +19,12 @@ Configuration contains:
 - LACP failover network
 
 
+Links
+---
+ - https://www.freebsd.org/
+ - https://bsdstats.org/
+
+
 Future
 ---
  - add more config files for services I use
