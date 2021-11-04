@@ -7,6 +7,6 @@ chmod 777 /var/locks
 
 for newsyslog run:
 ```
-mkdir /usr/local/etc/newsyslog.conf
-chmod 777 /usr/local/etc/newsyslog.conf
+mkdir /usr/local/etc/newsyslog.conf.d
+chmod 777 /usr/local/etc/newsyslog.conf.d
 ```
