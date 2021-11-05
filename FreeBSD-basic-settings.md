@@ -1,3 +1,12 @@
+Basic steps
+---
+
+```
+touch /var/log/all.log
+mkdir /usr/local/etc/newsyslog.conf.d
+chmod 755 /usr/local/etc/newsyslog.conf.d
+```
+
 
 ZFS tuning
 ---
