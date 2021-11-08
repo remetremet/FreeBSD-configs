@@ -51,3 +51,13 @@ zfs set compression=lz4 /zroot/usr/home
 zfs set compression=lz4 /zroot/usr/ports
 zfs set compression=lz4 /zroot/usr/src
 ```
+
+
+Sendmail
+---
+```
+cd /etc/mail
+make
+openssl dhparam -out /etc/mail/certs/dh.param 2048
+make restart
+```
