@@ -1,4 +1,13 @@
-For Sendmail STARTTLS run
+For Sendmail
+---
 ```
-openssl dhparam -out /etc/mail/certs/dh.param 2048
+cd /etc/mail
+make && make restart
+```
+
+
+For Sendmail STARTTLS run
+---
+```
+openssl dhparam -out /etc/mail/certs/dh.param 4096
 ```
