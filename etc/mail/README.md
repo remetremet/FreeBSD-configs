@@ -1,4 +1,4 @@
-For Sendmail
+For Sendmail run
 ---
 ```
 cd /etc/mail
