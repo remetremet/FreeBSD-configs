@@ -58,6 +58,6 @@ Sendmail
 ```
 cd /etc/mail
 make
-openssl dhparam -out /etc/mail/certs/dh.param 2048
+openssl dhparam -out /etc/mail/certs/dh.param 4096
 make restart
 ```
