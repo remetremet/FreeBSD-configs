@@ -22,8 +22,13 @@ Configuration contains:
 
 Links
 ---
- - https://www.freebsd.org/
- - https://bsdstats.org/
+ - FreeBSD Official Website: https://www.freebsd.org/
+ - FreeBSD Forum: https://forums.freebsd.org/
+ - BSDstats: https://bsdstats.org/
+ - BSD Hardware: https://bsd-hardware.info/
+ - Reddit: https://www.reddit.com/r/freebsd
+ - Planet FreeBSD: https://planet.xbsd.net/
+ - dmesgd: https://dmesgd.nycbug.org/index.cgi
 
 
 Future
