@@ -21,6 +21,7 @@ ZFS tuning
 ---
 
 ```
+zfs set quota=5G zroot/ROOT
 zfs create -o mountpoint=/data -o compress=lz4 zroot/data
 
 mv /var/backups /var/backups_tmp
