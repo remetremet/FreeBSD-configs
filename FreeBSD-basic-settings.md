@@ -46,7 +46,7 @@ rm -rf /var/spool_tmp
 zfs create -o mountpoint=/var/locks -o compress=lz4 zroot/var/locks
 zfs set compression=lz4 /zroot/var/log
 zfs set compression=lz4 /zroot/var/mail
-zfs create -o mountpoint=/var/zabbix -o compress=lz4 zroot/var/zabbix
+zfs create -o mountpoint=/var/zabbix -o compress=lz4 -o quota=100M zroot/var/zabbix
 zfs set compression=lz4 /zroot/usr/home
 zfs set compression=lz4 /zroot/usr/ports
 zfs set compression=lz4 /zroot/usr/src
