@@ -21,8 +21,9 @@ ZFS tuning
 ---
 
 ```
-zfs set quota=5G zroot/ROOT
 zfs create -o mountpoint=/data -o compress=lz4 zroot/data
+
+zfs set quota=5G zroot/ROOT
 
 mv /var/backups /var/backups_tmp
 zfs create -o mountpoint=/var/backups -o compress=lz4 -o quota=100M zroot/var/backups
@@ -44,14 +45,17 @@ zfs create -o mountpoint=/var/spool -o compress=lz4 -o quota=100M zroot/var/spoo
 rsync -avAX /var/spool_tmp/ /var/spool
 rm -rf /var/spool_tmp
 
-zfs set quota=16G zroot/var/crash
-zfs create -o mountpoint=/var/locks -o compress=lz4 zroot/var/locks
-zfs set compression=lz4 -o quota=16G zroot/var/log
-zfs set compression=lz4 -o quota=1G zroot/var/mail
+zfs set compression=lz4 quota=16G zroot/var/audit
+zfs set compression=lz4 quota=16G zroot/var/crash
+zfs create -o mountpoint=/var/locks -o compress=lz4 -o quota=100M zroot/var/locks
+zfs set compression=lz4 quota=16G zroot/var/log
+zfs set compression=lz4 quota=1G zroot/var/mail
 zfs create -o mountpoint=/var/zabbix -o compress=lz4 -o quota=100M zroot/var/zabbix
-zfs set compression=lz4 zroot/usr/home
-zfs set compression=lz4 zroot/usr/ports
-zfs set compression=lz4 zroot/usr/src
+zfs set compression=lz4 quota=64G zroot/usr/home
+zfs set compression=lz4 quota=16G zroot/usr/ports
+zfs set compression=lz4 quota=16G zroot/usr/src
+zfs set compression=lz4 quota=128G zroot/tmp
+zfs set compression=lz4 quota=128G zroot/var/tmp
 ```
 
 
