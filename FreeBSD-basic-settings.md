@@ -1,26 +1,28 @@
-Basic steps
+Basic steps (non ZFS)
 ---
 
 ```
 touch /var/log/all.log
 mkdir /usr/local/etc/newsyslog.conf.d
 chmod 755 /usr/local/etc/newsyslog.conf.d
-```
 
+mkdir /data
+chmod 755 /data
 
-Samba 4
----
-
-```
+# Samba 4
 mkdir /var/locks
 chmod 755 /var/locks
 ```
 
 
-ZFS tuning
+Basic steps (ZFS)
 ---
 
 ```
+touch /var/log/all.log
+mkdir /usr/local/etc/newsyslog.conf.d
+chmod 755 /usr/local/etc/newsyslog.conf.d
+
 zfs create -o mountpoint=/data -o compress=lz4 zroot/data
 
 zfs set quota=5G zroot/ROOT
@@ -46,7 +48,7 @@ rsync -avAX /var/spool_tmp/ /var/spool
 rm -rf /var/spool_tmp
 
 mv /var/stats /var/stats_tmp
-zfs create -o mountpoint=/var/stats -o compress=lz4 -o quota=100M zroot/var/stats
+zfs create -o mountpoint=/var/stats -o compress=lz4 -o quota=1G zroot/var/stats
 rsync -avAX /var/stats_tmp/ /var/stats
 rm -rf /var/stats_tmp
 
