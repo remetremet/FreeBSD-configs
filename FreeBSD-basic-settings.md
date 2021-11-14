@@ -45,6 +45,11 @@ zfs create -o mountpoint=/var/spool -o compress=lz4 -o quota=100M zroot/var/spoo
 rsync -avAX /var/spool_tmp/ /var/spool
 rm -rf /var/spool_tmp
 
+mv /var/stats /var/stats_tmp
+zfs create -o mountpoint=/var/stats -o compress=lz4 -o quota=100M zroot/var/stats
+rsync -avAX /var/stats_tmp/ /var/stats
+rm -rf /var/stats_tmp
+
 zfs set compression=lz4 quota=16G zroot/var/audit
 zfs set compression=lz4 quota=16G zroot/var/crash
 zfs create -o mountpoint=/var/locks -o compress=lz4 -o quota=100M zroot/var/locks
