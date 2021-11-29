@@ -153,8 +153,8 @@ Optional packages for DNS, Zabbix, Samba, Multimedia, ...
 - `sysbench` - CPU/file system/SQL benchmark (**ports by hand compiled version needed for use with MariaDB**)
 - `wordpress`
 - `zabbix54-frontend` - Zabbix
-- `zabbix54-proxy` - Zabbix
-- `zabbix54-server` - Zabbix (**ports by hand compiled version needed for use with MariaDB**)
+- `zabbix54-proxy` - Zabbix (**ports by hand compiled version needed for use with MariaDB or SQLite, although needed for some check methods**)
+- `zabbix54-server` - Zabbix (**ports by hand compiled version needed for use with MariaDB or SQLite, although needed for some check methods**)
 ```
 pkg install bind916 ffmpeg fusefs-exfat fusefs-ntfs fusefs-ext2 libcoap mediatomb mosquitto net-snmp nut\
 openipmi portupgrade py38-certbot py38-certbot-dns-rfc2136 py38-pip py38-speedtest-cli samba413 ser2net\
